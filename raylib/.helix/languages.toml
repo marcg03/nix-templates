@@ -1,0 +1,5 @@
+[[language]]
+name = "c"
+language-servers = []
+formatter = { command = "clang-format" }
+auto-format = true

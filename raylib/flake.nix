@@ -99,7 +99,11 @@
             desktop
             web
           ];
-          packages = [ pkgs.python3 ] ++ pkgs.lib.optional pkgs.stdenv.hostPlatform.isLinux pkgs.gdb;
+          packages = [
+            pkgs.python3
+            pkgs.clang-tools
+          ]
+          ++ pkgs.lib.optional pkgs.stdenv.hostPlatform.isLinux pkgs.gdb;
           NAME = name;
           RAYLIB_SRC = "${pkgs.raylib.src}";
           shellHook = useEmscriptenCache "\${XDG_CACHE_HOME:-$HOME/.cache}/emscripten-${pkgs.emscripten.version}";

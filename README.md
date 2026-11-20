@@ -9,5 +9,5 @@ Starter projects for `nix flake init`.
 Use it in an empty folder:
 
 ```sh
-nix flake init -t 'github:<you>/nix-templates#raylib'
+nix flake init -t 'github:marcg03/nix-templates#raylib'
 ```
